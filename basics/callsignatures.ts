@@ -1,5 +1,15 @@
 // call signatures
 
+//
+
+type resign = {
+    (a: string, b: string) : string
+}
+
+const addString : resign = (a,b) => {
+    if (typeof(a) === "string" && typeof(b) === "string") return a+b
+    return "123"
+}
 type sign = {
     (a: number, b: number) : number
 }
