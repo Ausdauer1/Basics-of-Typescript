@@ -25,14 +25,32 @@ taco.getFullName()
 
 
 abstract class Soju {
+    sojuName: string;
+    alcoholPercent: number;
+
     constructor(
         sojuName: string,
         alcoholPercent: number,
-    ) {}
+    ) {
+        this.sojuName = sojuName;
+        this.alcoholPercent = alcoholPercent;
+    }
 
-    getFullInfo(sojuName, alcoholPercent) {
-        return `${this.sojuName} ${this.alcoholPercent}`
+    abstract getFullInfo(): string;
+}
+
+class MySoju extends Soju {
+    constructor(
+        sojuName: string,
+        alcoholPercent: number,
+    ) {
+        super(sojuName, alcoholPercent);
+    }
+
+    getFullInfo() {
+        return `${this.sojuName} ${this.alcoholPercent}%`;
     }
 }
 
-const c1 = new Soju()
+const c1 = new MySoju("Chamisul", 20);
+console.log(c1.getFullInfo()); // 출력: Chamisul 20%
