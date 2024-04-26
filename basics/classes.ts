@@ -24,22 +24,18 @@ const taco = new PlayerR("nico", "las", "니꼬");
 taco.getFullName()
 
 
-class Soju {
-    sojuName: string;
-    alcoholPercent: number;
-
+abstract class Soju {
     constructor(
         sojuName: string,
         alcoholPercent: number,
-    ) {
-        this.sojuName = sojuName;
-        this.alcoholPercent = alcoholPercent;
-    }
+    ) {}
 
-    getFullInfo() {
-        return `${this.sojuName} ${this.alcoholPercent}%`;
+    getFullInfo(sojuName, alcoholPercent) {
+        return `${sojuName} ${alcoholPercent}`
     }
 }
 
-const c1 = new Soju("Chamisul", 20);
-console.log(c1.getFullInfo()); // 출력: Chamisul 20%
+// const c1 = new Soju()
+
+
+// abstract 키워드는 클래스가 추상 클래스임을 나타내기 위해 사용됩니다. 추상 클래스는 직접적으로 인스턴스화될 수 없으며, 상속을 통해 파생된 클래스에서 구현해야 하는 메서드나 속성을 정의할 수 있습니다.
