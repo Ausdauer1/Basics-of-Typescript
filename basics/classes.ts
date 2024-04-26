@@ -24,7 +24,7 @@ const taco = new PlayerR("nico", "las", "니꼬");
 taco.getFullName()
 
 
-abstract class Soju {
+class Soju {
     sojuName: string;
     alcoholPercent: number;
 
@@ -36,21 +36,10 @@ abstract class Soju {
         this.alcoholPercent = alcoholPercent;
     }
 
-    abstract getFullInfo(): string;
-}
-
-class MySoju extends Soju {
-    constructor(
-        sojuName: string,
-        alcoholPercent: number,
-    ) {
-        super(sojuName, alcoholPercent);
-    }
-
     getFullInfo() {
         return `${this.sojuName} ${this.alcoholPercent}%`;
     }
 }
 
-const c1 = new MySoju("Chamisul", 20);
+const c1 = new Soju("Chamisul", 20);
 console.log(c1.getFullInfo()); // 출력: Chamisul 20%
