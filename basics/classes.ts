@@ -22,3 +22,17 @@ class PlayerR extends User {
 const taco = new PlayerR("nico", "las", "니꼬");
 
 taco.getFullName()
+
+
+abstract class Soju {
+    constructor(
+        sojuName: string,
+        alcoholPercent: number,
+    ) {}
+
+    getFullInfo(sojuName, alcoholPercent) {
+        return `${this.sojuName} ${this.alcoholPercent}`
+    }
+}
+
+const c1 = new Soju()
