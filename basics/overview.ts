@@ -46,7 +46,7 @@ const lynnOverview : PlayerExample = {
     age: 12
 }
 
-function playerMaker(name:string) : Player {
+function playerMaker(name:string) : PlayerExample {
     return {
         name
     }
@@ -65,7 +65,7 @@ mad.age
 const co = playerMaker("nice")
 co.age = 12
 
-const playerMakerA = (name:string) : Player => ({name})
+const playerMakerA = (name:string) : PlayerExample => ({name})
 
 const playMakerB = (play:string) : PlayerExample => ({play})
 
