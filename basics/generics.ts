@@ -8,16 +8,16 @@ function superman<M>(a: M[]) {
     return a[1]
 }
 
-// type SuperPrint = {
-//     (arr: number[]):void,
-//     (arr: boolean[]):void
-//     (arr: string[]):void
-//     (arr: (number|boolean)[]) : void
-// }
+type SuperPrint = {
+    (arr: number[]):void,
+    (arr: boolean[]):void
+    (arr: string[]):void
+    (arr: (number|boolean)[]) : void
+}
 
-// type SuperPrint = {
-//     <TypePlaceholder>(arr: TypePlaceholder[]): TypePlaceholder,
-// }
+type SuperPrint2 = {
+    <TypePlaceholder>(arr: TypePlaceholder[]): TypePlaceholder,
+}
 
 // type SuperPrint = <T, M>(arr: T[], b:M) => T
 type SuperP = (a: any[]) => any
