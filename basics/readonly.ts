@@ -1,6 +1,13 @@
 type Age = number;
 type Name = string;
 
+type Team = number;
+
+type BasketBall = {
+    team : Team  
+}
+
+
 type Player = {
     readonly name: Name
     age?: Age
