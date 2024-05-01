@@ -4,10 +4,18 @@ type Name = string;
 type Team = number;
 
 type BasketBall = {
-    team : Team  
+     team : Team  
 }
 
+const LAL : BasketBall = {
+    team : 7
+}
 
+const LAC : BasketBall = {
+    team : 4
+}
+
+LAC.team = 13
 
 type Player = {
     readonly name: Name
