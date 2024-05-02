@@ -7,15 +7,14 @@ type BasketBall = {
      team : Team  
 }
 
-const LAL : BasketBall = {
-    team : 7
+const USA : BasketBall = {
+    team : 30
 }
 
-const LAC : BasketBall = {
-    team : 4
+const Korea : BasketBall = {
+    team : 10
 }
 
-LAC.team = 13
 
 type Player = {
     readonly name: Name
