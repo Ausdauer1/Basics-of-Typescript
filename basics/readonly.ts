@@ -14,10 +14,14 @@ const USA : BasketBall = {
 const Korea : BasketBall = {
     team : 10
 }
+const Korea1 : BasketBall = {
+    team : 10
+}
+
 
 
 type Player = {
-    readonly name: Name
+    name: Name
     age?: Age
 }
 
