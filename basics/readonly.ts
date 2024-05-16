@@ -39,6 +39,15 @@ const Korea6 : BasketBall = {
 const Korea7 : BasketBall = {
     team : 10
 }
+const Korea8 : BasketBall = {
+    team : 8
+}
+const Korea9 : BasketBall = {
+    team : 9
+}
+const Korea10 : BasketBall = {
+    team : 10
+}
 
 type Player = {
     name: Name
