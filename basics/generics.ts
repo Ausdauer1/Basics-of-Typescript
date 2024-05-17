@@ -71,6 +71,20 @@ const jerry: Player2 = {
     infos: 123
 }
 
+type Player3 = PlayerPrac<number>
+
+const hwang: Player2 = {
+    name : "jerry",
+    infos: 123
+}
+
+type Player4 = PlayerPrac<number>
+
+const yoon: Player2 = {
+    name : "jerry",
+    infos: 123
+}
+
 
 
 type NicoPlayer = PlayerG<{ favFood:string }>
